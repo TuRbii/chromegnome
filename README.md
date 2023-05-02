@@ -17,10 +17,14 @@ The script looks for the questions from the form, so make sure you have them typ
 ## Settings
 
 Trigger settings:
-Choose which function to run - onSubmit
-Which runs at deployment - Head
-Select event source - From form
-Select event type - On form submit
+Choose which function to run - onSubmit  
+
+Which runs at deployment - Head  
+
+Select event source - From form  
+
+Select event type - On form submit  
+
 
 Make sure to click to add a service and choose the AdminDirectory SDK directory_v1.
 
