@@ -7,13 +7,13 @@ If you would like to use this, you should create a Google form matching the one 
 
 
 The script looks for the questions from the form, so make sure you have them typed exactly as shown, or edit the script to match your form.
-{ switch (q) {
+```{ switch (q) {
       case "Enter Asset ID":
         asset = a;
         break;
       case "Action":
       }
-
+```
 ## Settings
 
 Trigger settings:
