@@ -1,4 +1,4 @@
-# powerwash
+# ChromeGnome
 
 Apps Script to powerwash, erase user data, lock, or unlock a chromebook. This utilizes Admin SDK API directory_v1, with a Google Form and Apps Script. 
 If you would like to use this, you should create a Google form matching the one I've shown here. 
