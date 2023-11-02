@@ -10,12 +10,15 @@ If you would like to use this, you should create a Google form matching the one 
 
 
 The script looks for the questions from the form, so make sure you have them typed exactly as shown, or edit the script to match your form.
-```{ switch (q) {
-      case "Enter Asset ID":
-        asset = a;
-        break;
-      case "Action":
-      }
+```if (q == "Enter Asset ID") { asset = a; }
+      if (q == "Action") {
+        switch (a) {
+          case "Lock Device":
+          case "Unlock Device":
+            updateDevice(action[a], asset);
+            break;
+          default:
+            issueCommand(action[a], asset);
 ```
 ## Settings
 
