@@ -8,7 +8,7 @@ If you would like to use this, you should create a Google form matching the one 
 The script can now change a device's OU. To use this feature you'll need to add options to the action menu in the form.
 For us we use the OU names "Elementary 1:1, Middle School 1:1, and High School 1:1". Take a look at the script and modify the OU paths and names to match your organization.
 
-![screen40](https://github.com/TuRbii/powerwash/assets/16769806/464bf710-c1ca-4980-b671-e626531550af)
+![screen206](https://github.com/user-attachments/assets/bce2dec7-ddbd-466a-9cd2-df4cd27d1965)
 
 
 The script looks for the questions from the form, so make sure you have them typed exactly as shown, or edit the script to match your form.
