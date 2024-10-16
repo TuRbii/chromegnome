@@ -1,6 +1,7 @@
 # ChromeGnome
 The name comes from the original implementation of this. I tossed an image of one of my WoW characters as the Google Form image which was a gnome warlock. 
-![screen41](https://github.com/TuRbii/chromegnome/assets/16769806/31746630-0136-4fbb-8213-c9d6aea768f0)
+![screen207](https://github.com/user-attachments/assets/36619068-4b52-4e27-a739-5d618af41f5d)
+
 
 
 This is a Google Apps Script to powerwash, erase user data, lock, or unlock a chromebook. This utilizes Admin SDK API directory_v1, with a Google Form and Apps Script. 
