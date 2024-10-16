@@ -5,6 +5,8 @@ The name comes from the original implementation of this. I tossed an image of on
 
 This is a Google Apps Script to powerwash, erase user data, lock, or unlock a chromebook. This utilizes Admin SDK API directory_v1, with a Google Form and Apps Script. 
 If you would like to use this, you should create a Google form matching the one I've shown here. 
+The script can now change a device's OU. To use this feature you'll need to add options to the action menu in the form.
+For us we use the OU names "Elementary 1:1, Middle School 1:1, and High School 1:1". Take a look at the script and modify the OU paths and names to match your organization.
 
 ![screen40](https://github.com/TuRbii/powerwash/assets/16769806/464bf710-c1ca-4980-b671-e626531550af)
 
@@ -13,12 +15,19 @@ The script looks for the questions from the form, so make sure you have them typ
 ```if (q == "Enter Asset ID") { asset = a; }
       if (q == "Action") {
         switch (a) {
-          case "Lock Device":
-          case "Unlock Device":
-            updateDevice(action[a], asset);
-            break;
-          default:
-            issueCommand(action[a], asset);
+        case "Lock Device":
+        case "Unlock Device":
+          updateDevice(action[a], asset);
+          break;
+        case "Elementary":
+        case "Middle":
+        case "High":
+          changeOu(action[a], asset);
+          Utilities.sleep(5000); 
+          issueCommand("WIPE_USERS", asset);
+          break;
+        default:
+          issueCommand(action[a], asset);
 ```
 ## Settings
 
